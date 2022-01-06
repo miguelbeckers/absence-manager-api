@@ -2,7 +2,7 @@
 
 ## 📜 Description
 
-This project is the a complement of the solution for [Crewmeister coding challenge - Frontend (React)](https://github.com/crewmeister/frontend-coding-challenge)
+This project is the a complement for the [Crewmeiter Absence Manager WebApp](https://github.com/miguelbeckers/absence-manager-api)
 
 ## 🌐 Links
 
