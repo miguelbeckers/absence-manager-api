@@ -2,7 +2,7 @@
 
 ## 📜 Description
 
-This project is the API part of the solution for [Crewmeister coding challenge - Frontend (React)](https://github.com/crewmeister/frontend-coding-challenge)
+This project is the a complement of the solution for [Crewmeister coding challenge - Frontend (React)](https://github.com/crewmeister/frontend-coding-challenge)
 
 ## 🌐 Links
 
@@ -15,7 +15,7 @@ This project is the API part of the solution for [Crewmeister coding challenge -
 1. Clone or download this project
 1. Open the project folder using IntelliJ
 1. Wait for the auto building process
-1. Start the application
+1. Run the application
 
 ## ✔️ Prerequisites
 
