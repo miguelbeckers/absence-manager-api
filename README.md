@@ -2,7 +2,7 @@
 
 ## 📜 Description
 
-This project is the a complement for the [Crewmeiter Absence Manager WebApp](https://github.com/miguelbeckers/absence-manager-api)
+This project is the a complement to the [Crewmeiter Absence Manager WebApp](https://github.com/miguelbeckers/absence-manager-api)
 
 ## 🌐 Links
 
