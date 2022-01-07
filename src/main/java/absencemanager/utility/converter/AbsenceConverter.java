@@ -17,6 +17,7 @@ public class AbsenceConverter {
         absenceDTO.setId(absence.getId());
         absenceDTO.setCrewId(absence.getCrew().getId());
         absenceDTO.setUserId(absence.getUser().getId());
+        absenceDTO.setUserName(absence.getUser().getName());
         absenceDTO.setCreatedAt(absence.getCreatedAt());
         absenceDTO.setConfirmedAt(absence.getConfirmedAt());
         absenceDTO.setRejectedAt(absence.getRejectedAt());
@@ -55,13 +56,13 @@ public class AbsenceConverter {
         absence.setId(absenceDTO.getId());
         absence.setCrew(crew);
         absence.setUser(user);
-        absence.setConfirmedAt(absenceDTO.getConfirmedAt());
-        absence.setRejectedAt(absenceDTO.getRejectedAt());
-        absence.setStartDate(absenceDTO.getStartDate());
         absence.setEndDate(absenceDTO.getEndDate());
         absence.setType(absenceDTO.getType());
         absence.setAdmitterNote(absenceDTO.getAdmitterNote());
         absence.setMemberNote(absenceDTO.getMemberNote());
+        absence.setConfirmedAt(absenceDTO.getConfirmedAt());
+        absence.setRejectedAt(absenceDTO.getRejectedAt());
+        absence.setStartDate(absenceDTO.getStartDate());
         return absence;
     }
 

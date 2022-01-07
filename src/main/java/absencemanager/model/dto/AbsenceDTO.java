@@ -17,6 +17,8 @@ public class AbsenceDTO {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long admitterId;
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private String userName;
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private ZonedDateTime createdAt;
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private ZonedDateTime confirmedAt;
