@@ -4,11 +4,13 @@ import absencemanager.model.dto.AbsenceDTO;
 import absencemanager.model.entity.Absence;
 import absencemanager.model.entity.Crew;
 import absencemanager.model.entity.User;
+import absencemanager.model.enumerator.UserType;
 import absencemanager.repository.AbsenceRepository;
 import absencemanager.repository.CrewRepository;
 import absencemanager.repository.UserRepository;
 import absencemanager.utility.converter.AbsenceConverter;
 import absencemanager.utility.exception.ApiExceptionConstants;
+import absencemanager.utility.exception.BadRequestException;
 import absencemanager.utility.exception.NotFoundException;
 import absencemanager.utility.validator.AbsenceValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -106,6 +108,8 @@ public class AbsenceService {
         User admitter = userRepository.findById(admitterId).orElse(null);
         if (admitter == null) throw new NotFoundException(ApiExceptionConstants.ADMITTER_NOT_FOUND);
 
+        if (admitter.getType() != UserType.ADMITTER) throw new BadRequestException("User not allowed to admit");
+
         absence.setAdmitter(admitter);
         absence.setAdmitterNote(note);
         absence.setConfirmedAt(java.time.ZonedDateTime.now());
@@ -119,6 +123,8 @@ public class AbsenceService {
         if (admitter == null) throw new NotFoundException(ApiExceptionConstants.ADMITTER_NOT_FOUND);
         Absence absence = absenceRepository.findById(absenceId).orElse(null);
         if (absence == null) throw new NotFoundException(ApiExceptionConstants.ABSENCE_NOT_FOUND);
+
+        if (admitter.getType() != UserType.ADMITTER) throw new BadRequestException("User not allowed to admit");
 
         absence.setAdmitter(admitter);
         absence.setAdmitterNote(note);
