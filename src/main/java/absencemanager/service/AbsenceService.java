@@ -124,7 +124,7 @@ public class AbsenceService {
         Absence absence = absenceRepository.findById(absenceId).orElse(null);
         if (absence == null) throw new NotFoundException(ApiExceptionConstants.ABSENCE_NOT_FOUND);
 
-        if (admitter.getType() != UserType.ADMITTER) throw new BadRequestException("User not allowed to admit");
+        if (admitter.getType() != UserType.ADMITTER) throw new BadRequestException("User not allowed to reject");
 
         absence.setAdmitter(admitter);
         absence.setAdmitterNote(note);
