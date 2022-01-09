@@ -1,6 +1,7 @@
 package absencemanager.model.entity;
 
 import absencemanager.model.enumerator.AbsenceType;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,6 +14,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity(name = "ABSENCES")
 public class Absence {
     @Id

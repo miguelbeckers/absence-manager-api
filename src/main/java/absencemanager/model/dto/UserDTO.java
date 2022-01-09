@@ -1,6 +1,7 @@
 package absencemanager.model.dto;
 
 import absencemanager.model.enumerator.UserType;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
