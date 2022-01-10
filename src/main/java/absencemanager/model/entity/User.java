@@ -21,6 +21,7 @@ public class User {
     private String name;
     private UserType type;
     private String image;
+    private String email;
     @ManyToOne
     private Crew crew;
     @OneToMany(cascade = {CascadeType.ALL})

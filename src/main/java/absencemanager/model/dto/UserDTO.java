@@ -14,5 +14,6 @@ public class UserDTO {
     private Long crewId;
     private String name;
     private String image;
+    private String email;
     private UserType type;
 }

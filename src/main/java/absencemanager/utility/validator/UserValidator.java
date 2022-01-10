@@ -25,6 +25,8 @@ public class UserValidator {
         if (user.getImage() == null) throw new BadRequestException("Image cannot be null");
         if (user.getImage().isBlank()) throw new BadRequestException("Image cannot be blank");
         if (user.getCrew().getId() == null) throw new BadRequestException("CrewId cannot be null");
+        if (user.getEmail() == null) throw new BadRequestException("Email cannot be null");
+        if (user.getEmail().isBlank()) throw new BadRequestException("Email cannot be blank");
 
         Crew crew = crewRepository.findById(user.getCrew().getId()).orElse(null);
         if (crew == null) throw new NotFoundException(ApiExceptionConstants.CREW_NOT_FOUND);

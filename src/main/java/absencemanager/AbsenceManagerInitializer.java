@@ -54,62 +54,72 @@ public class AbsenceManagerInitializer {
         user1.setId(644L);
         user1.setCrew(crew);
         user1.setName("Max Schwarz");
-        user1.setImage("https://loremflickr.com/300/400");
+        user1.setImage("https://loremflickr.com/300/400/cat");
         user1.setType(UserType.ADMITTER);
+        user1.setEmail("max@crew.com");
 
         user2.setId(649L);
         user2.setCrew(crew);
         user2.setName("Ines de Oliveira");
-        user2.setImage("https://loremflickr.com/300/400");
+        user2.setImage("https://loremflickr.com/300/400/fish");
         user2.setType(UserType.MEMBER);
+        user2.setEmail("ines@crew.com");
 
         user3.setId(2290L);
         user3.setCrew(crew);
         user3.setName("Monika Müller");
-        user3.setImage("https://loremflickr.com/300/400");
+        user3.setImage("https://loremflickr.com/300/400/dog");
         user3.setType(UserType.MEMBER);
+        user3.setEmail("monika@crew.com");
 
         user4.setId(2664L);
         user4.setCrew(crew);
         user4.setName("Mike Janssen");
-        user4.setImage("https://loremflickr.com/300/400");
+        user4.setImage("https://loremflickr.com/300/400/bird");
         user4.setType(UserType.MEMBER);
+        user4.setEmail("mike@crew.com");
 
         user5.setId(2796L);
         user5.setCrew(crew);
         user5.setName("Bernhard Scherer");
-        user5.setImage("https://loremflickr.com/300/400");
+        user5.setImage("https://loremflickr.com/300/400/canguru");
         user5.setType(UserType.MEMBER);
+        user5.setEmail("bernhard@crew.com");
 
         user6.setId(2735L);
         user6.setCrew(crew);
         user6.setName("Manuel de Souza");
-        user6.setImage("https://loremflickr.com/300/400");
+        user6.setImage("https://loremflickr.com/300/400/horse");
         user6.setType(UserType.MEMBER);
+        user6.setEmail("manuel@crew.com");
 
         user7.setId(5293L);
         user7.setCrew(crew);
         user7.setName("Daniel Correa");
-        user7.setImage("https://loremflickr.com/300/400");
+        user7.setImage("https://loremflickr.com/300/400/fox");
         user7.setType(UserType.MEMBER);
+        user7.setEmail("danielcorrea@crew.com");
 
         user8.setId(5293L);
         user8.setCrew(crew);
         user8.setName("Daniel Silva");
-        user8.setImage("https://loremflickr.com/300/400");
+        user8.setImage("https://loremflickr.com/300/400/duck");
         user8.setType(UserType.MEMBER);
+        user1.setEmail("danielsilva@crew.com");
 
         user9.setId(5192L);
         user9.setCrew(crew);
         user9.setName("Sandra da Silva Santos");
-        user9.setImage("https://loremflickr.com/300/400");
+        user9.setImage("https://loremflickr.com/300/400/lion");
         user9.setType(UserType.MEMBER);
+        user1.setEmail("sandre@crew.com");
 
         user10.setId(8007L);
         user10.setCrew(crew);
         user10.setName("Linda Hanz");
-        user10.setImage("https://loremflickr.com/300/400");
+        user10.setImage("https://loremflickr.com/300/400/bear");
         user10.setType(UserType.MEMBER);
+        user1.setEmail("linda@crew.com");
 
         userRepository.save(user1);
         userRepository.save(user2);

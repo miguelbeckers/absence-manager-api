@@ -18,6 +18,7 @@ public class UserConverter {
         userDTO.setType(user.getType());
         userDTO.setImage(user.getImage());
         userDTO.setCrewId(user.getCrew().getId());
+        userDTO.setEmail(user.getEmail());
         return userDTO;
     }
 
@@ -39,6 +40,7 @@ public class UserConverter {
         user.setType(userDTO.getType());
         user.setImage(userDTO.getImage());
         user.setCrew(crew);
+        user.setEmail(userDTO.getEmail());
         return user;
     }
 
