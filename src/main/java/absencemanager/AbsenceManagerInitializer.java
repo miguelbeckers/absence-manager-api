@@ -33,12 +33,10 @@ public class AbsenceManagerInitializer {
         this.initialize();
     }
 
-    public void initialize(){
+    public void initialize() {
         Crew crew = new Crew();
         crew.setName("crew-test");
         crew.setId(352L);
-
-        crewRepository.save(crew);
 
         User user1 = new User();
         User user2 = new User();
@@ -100,7 +98,7 @@ public class AbsenceManagerInitializer {
         user7.setType(UserType.MEMBER);
         user7.setEmail("danielcorrea@crew.com");
 
-        user8.setId(5293L);
+        user8.setId(5294L);
         user8.setCrew(crew);
         user8.setName("Daniel Silva");
         user8.setImage("https://loremflickr.com/300/400/duck");
@@ -120,17 +118,6 @@ public class AbsenceManagerInitializer {
         user10.setImage("https://loremflickr.com/300/400/bear");
         user10.setType(UserType.MEMBER);
         user1.setEmail("linda@crew.com");
-
-        userRepository.save(user1);
-        userRepository.save(user2);
-        userRepository.save(user3);
-        userRepository.save(user4);
-        userRepository.save(user5);
-        userRepository.save(user6);
-        userRepository.save(user7);
-        userRepository.save(user8);
-        userRepository.save(user9);
-        userRepository.save(user10);
 
         Absence absence1 = new Absence();
         Absence absence2 = new Absence();
@@ -307,7 +294,7 @@ public class AbsenceManagerInitializer {
         absence11.setConfirmedAt(ZonedDateTime.parse("2021-03-09T17:06:46.000+01:00"));
         absence11.setAdmitterNote("Viel Spaß");
 
-        absence12.setId(3597L);
+        absence12.setId(2597L);
         absence12.setCrew(crew);
         absence12.setUser(user5);
         absence12.setType(AbsenceType.vacation);
@@ -544,7 +531,7 @@ public class AbsenceManagerInitializer {
         absence31.setEndDate(Date.valueOf("2021-06-26"));
         absence31.setMemberNote("");
 
-        absence32.setId(5293L);
+        absence32.setId(1293L);
         absence32.setCrew(crew);
         absence32.setUser(user2);
         absence32.setType(AbsenceType.vacation);
@@ -661,6 +648,32 @@ public class AbsenceManagerInitializer {
         absence42.setEndDate(Date.valueOf("2021-10-13"));
         absence42.setMemberNote("");
 
+        crewRepository.save(crew);
+
+        userRepository.save(user1);
+        userRepository.save(user2);
+        userRepository.save(user3);
+        userRepository.save(user4);
+        userRepository.save(user5);
+        userRepository.save(user6);
+        userRepository.save(user7);
+        userRepository.save(user8);
+        userRepository.save(user9);
+        userRepository.save(user10);
+
+        crew.insertUser(user1);
+        crew.insertUser(user2);
+        crew.insertUser(user3);
+        crew.insertUser(user4);
+        crew.insertUser(user5);
+        crew.insertUser(user6);
+        crew.insertUser(user7);
+        crew.insertUser(user8);
+        crew.insertUser(user9);
+        crew.insertUser(user10);
+
+        crewRepository.save(crew);
+
         absenceRepository.save(absence1);
         absenceRepository.save(absence2);
         absenceRepository.save(absence3);
@@ -691,7 +704,116 @@ public class AbsenceManagerInitializer {
         absenceRepository.save(absence28);
         absenceRepository.save(absence29);
         absenceRepository.save(absence30);
+        absenceRepository.save(absence31);
+        absenceRepository.save(absence32);
+        absenceRepository.save(absence33);
+        absenceRepository.save(absence34);
+        absenceRepository.save(absence35);
+        absenceRepository.save(absence36);
+        absenceRepository.save(absence37);
+        absenceRepository.save(absence38);
+        absenceRepository.save(absence39);
+        absenceRepository.save(absence40);
         absenceRepository.save(absence41);
         absenceRepository.save(absence42);
+
+        crew.insertAbsence(absence1);
+        crew.insertAbsence(absence2);
+        crew.insertAbsence(absence3);
+        crew.insertAbsence(absence4);
+        crew.insertAbsence(absence5);
+        crew.insertAbsence(absence6);
+        crew.insertAbsence(absence7);
+        crew.insertAbsence(absence8);
+        crew.insertAbsence(absence9);
+        crew.insertAbsence(absence10);
+        crew.insertAbsence(absence11);
+        crew.insertAbsence(absence12);
+        crew.insertAbsence(absence13);
+        crew.insertAbsence(absence14);
+        crew.insertAbsence(absence15);
+        crew.insertAbsence(absence16);
+        crew.insertAbsence(absence17);
+        crew.insertAbsence(absence18);
+        crew.insertAbsence(absence19);
+        crew.insertAbsence(absence20);
+        crew.insertAbsence(absence21);
+        crew.insertAbsence(absence22);
+        crew.insertAbsence(absence23);
+        crew.insertAbsence(absence24);
+        crew.insertAbsence(absence25);
+        crew.insertAbsence(absence26);
+        crew.insertAbsence(absence27);
+        crew.insertAbsence(absence28);
+        crew.insertAbsence(absence29);
+        crew.insertAbsence(absence30);
+        crew.insertAbsence(absence31);
+        crew.insertAbsence(absence32);
+        crew.insertAbsence(absence33);
+        crew.insertAbsence(absence34);
+        crew.insertAbsence(absence35);
+        crew.insertAbsence(absence36);
+        crew.insertAbsence(absence37);
+        crew.insertAbsence(absence38);
+        crew.insertAbsence(absence39);
+        crew.insertAbsence(absence40);
+        crew.insertAbsence(absence41);
+        crew.insertAbsence(absence42);
+
+        crewRepository.save(crew);
+
+        user4.insertAbsence(absence1);
+        user4.insertAbsence(absence2);
+        user2.insertAbsence(absence3);
+        user7.insertAbsence(absence4);
+        user9.insertAbsence(absence5);
+        user4.insertAbsence(absence6);
+        user2.insertAbsence(absence7);
+        user6.insertAbsence(absence8);
+        user6.insertAbsence(absence9);
+        user5.insertAbsence(absence10);
+        user4.insertAbsence(absence11);
+        user5.insertAbsence(absence12);
+        user1.insertAbsence(absence13);
+        user1.insertAbsence(absence14);
+        user10.insertAbsence(absence15);
+        user9.insertAbsence(absence16);
+        user8.insertAbsence(absence17);
+        user7.insertAbsence(absence18);
+        user4.insertAbsence(absence19);
+        user6.insertAbsence(absence20);
+        user2.insertAbsence(absence21);
+        user6.insertAbsence(absence22);
+        user9.insertAbsence(absence23);
+        user10.insertAbsence(absence24);
+        user7.insertAbsence(absence25);
+        user7.insertAbsence(absence26);
+        user8.insertAbsence(absence27);
+        user4.insertAbsence(absence28);
+        user2.insertAbsence(absence29);
+        user3.insertAbsence(absence30);
+        user5.insertAbsence(absence31);
+        user2.insertAbsence(absence32);
+        user3.insertAbsence(absence33);
+        user6.insertAbsence(absence34);
+        user6.insertAbsence(absence35);
+        user9.insertAbsence(absence36);
+        user10.insertAbsence(absence37);
+        user9.insertAbsence(absence38);
+        user9.insertAbsence(absence39);
+        user9.insertAbsence(absence40);
+        user8.insertAbsence(absence41);
+        user8.insertAbsence(absence42);
+
+        userRepository.save(user1);
+        userRepository.save(user2);
+        userRepository.save(user3);
+        userRepository.save(user4);
+        userRepository.save(user5);
+        userRepository.save(user6);
+        userRepository.save(user7);
+        userRepository.save(user8);
+        userRepository.save(user9);
+        userRepository.save(user10);
     }
 }
