@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+.VSCodeCounter/2022-01-11_13-40-36/results.txt
+*.md
+.VSCodeCounter/2022-01-11_13-40-36/results.csv
